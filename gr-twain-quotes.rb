@@ -47,9 +47,10 @@ begin
 
 		fileTime = Time.now.strftime("%Y%m%d%H%M%S") 
 		fileName = 'gr-twain-quotes_' + fileTime + '.json'
-		saveToFile(Dir.home + '/Downloads/' + fileName, quoteList.to_json)
+		fullpath = Dir.home + '/Downloads/' + fileName
+		saveToFile(fullpath, quoteList.to_json)
 
-		puts 'Saved last ' + numPosts.to_s + ' quote(s) from ' + url + ' to ' + Dir.pwd + '/' + fileName
+		puts 'Saved last ' + numPosts.to_s + ' quote(s) from ' + url + ' to ' + fullpath
 	end 
 rescue => e
 	puts 'Error encountered:'
