@@ -4,8 +4,8 @@ Script to fetch top 10 Mark Twain quotes on goodreads.com and save them a local 
 
 ### Prerequisites
 
-Install ruby gem nokogiri
-Install ruby gem htmlentities
+- Install ruby gem nokogiri
+- Install ruby gem htmlentities
 
 ```
 Give examples
